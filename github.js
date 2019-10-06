@@ -15,7 +15,7 @@ class Github{
     async getUser(user){  //async allows this function to return a promise
 
         //await allows us to wait for a promise to resolve a value
-        const profileResponse = await fetch(`https://api.github.com/users/${user}?client_id=${this.client_id}&client_{this.client_secret}`);
+        const profileResponse = await fetch(`https://api.github.com/users/${user}?client_id=${this.client_id}&client_secret=${this.client_secret}`);
 
 
         //get the profile data
