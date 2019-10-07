@@ -73,6 +73,13 @@ class UI{
 
         repo.forEach(repo =>{
 
+            console.log(repo);
+
+
+            let date = new Date(repo.created_at);
+
+
+
 
             output += `
             
@@ -90,8 +97,9 @@ class UI{
                     <div class = "col-md-6">
 
                          <span class = "badge badge-pill badge-primary">Stars: ${repo.stargazers_count}</span>
-                         <span class = "badge badge-pill badge-danger">Watchers: ${repos.watchers_count}</span>
-                         <span class = "badge badge-pill badge-info">Followers: ${repos.forms_count}</span>
+                         <span class = "badge badge-pill badge-danger">Watchers: ${repo.watchers_count}</span>
+                         <span class = "badge badge-pill badge-info">Forks: ${repo.forks_count}</span>
+                         <span class = "badge badge-pill badge-success">Created on: ${date.toLocaleDateString('en-US')}</span>
  
                     
                     </div>
