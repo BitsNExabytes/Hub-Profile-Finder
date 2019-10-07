@@ -30,6 +30,7 @@ searchUser.addEventListener('keyup', (e) =>{
        if(data.profile.message === 'Not Found'){
 
         //if profile is not found show alert
+        ui.showAlert();
     
     
 
@@ -44,7 +45,8 @@ searchUser.addEventListener('keyup', (e) =>{
   }
   else{
 
-    //clear profile 
+    //If the input field contents is empty
+    ui.clearProfile();
   }
 
 

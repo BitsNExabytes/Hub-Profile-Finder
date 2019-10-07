@@ -24,7 +24,7 @@ class UI{
             <div class ="col-md-3">
 
                 <img class = "img-fluid mb-2" src = "${user.avatar_url}">
-                <a href="${user.html_url}" target= "_blank" class = "btn btn-info btn-block">View Profile</a>
+                <a href="${user.html_url}" target= "_blank" class = "btn btn-info btn-block mb-4">View Profile</a>
 
             </div>
     
@@ -61,6 +61,45 @@ class UI{
      `;
 
     
+
+    }
+
+    //create clear profile method
+    clearProfile(){
+
+        this.profile.innerHTML = '';
+
+    }
+
+
+    //create method to show alert
+    showAlert(){
+
+        
+
+        //if the profile div has contents clear it
+        if(this.profile.innerHTML !== ''){
+
+          
+            this.profile.innerHTML = '';
+
+
+
+        }
+        
+        // inject the warning  div element into the the profile div
+        this.profile.innerHTML = `
+
+        <div class = "alert alert-primary fade show" role = "alert">
+
+            <strong>We're Sorry!</strong> The Profile that you are looking for could not be found.
+
+        
+        </div>
+        
+        
+        `;
+
 
     }
 }
