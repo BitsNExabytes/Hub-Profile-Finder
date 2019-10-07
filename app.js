@@ -31,17 +31,20 @@ searchUser.addEventListener('keyup', (e) =>{
 
         //if profile is not found show alert
         ui.showAlert();
-    
-    
-
+        
        }
        else{
 
 
         //if profile is found show profile
         ui.showProfile(data.profile);
+        ui.showRepo(data.repo);
        }
     });
+
+
+
+
   }
   else{
 
