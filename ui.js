@@ -43,7 +43,7 @@ class UI{
                     <li class ="list-group-item active">Company: ${user.company}</li>
                     <li class ="list-group-item">Website/blog: ${user.blog}</li>
                     <li class ="list-group-item">Location: ${user.location}</li>
-                    <li class ="list-group-item">Member Since: ${date.toLocaleDateString('en-US 222')}</li>
+                    <li class ="list-group-item">Member Since: ${date.toLocaleDateString('en-US')}</li>
                 </ul>
 
             </div>
