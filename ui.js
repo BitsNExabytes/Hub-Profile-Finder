@@ -14,6 +14,8 @@ class UI{
 
     showProfile(user){
 
+        let date = new Date(user.created_at);
+
       
      this.profile.innerHTML = `
 
@@ -41,7 +43,7 @@ class UI{
                     <li class ="list-group-item active">Company: ${user.company}</li>
                     <li class ="list-group-item">Website/blog: ${user.blog}</li>
                     <li class ="list-group-item">Location: ${user.location}</li>
-                    <li class ="list-group-item">Member Since: ${user.created_at}</li>
+                    <li class ="list-group-item">Member Since: ${date.toLocaleDateString('en-US 222')}</li>
                 </ul>
 
             </div>
